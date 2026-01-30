@@ -1,0 +1,101 @@
+/*------------------------------------*\ 
+
+$COMMON STYLES FOR ALL BUTTONS 
+
+\*------------------------------------*/
+
+/* Base del botón:
+    - Se deja el borde “reservado” (2px transparent) para evitar saltos al cambiar border-color
+    - transition solo para el efecto de elevación (transform) */
+.btn {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    border-radius: 999px;    
+    cursor: pointer;    
+    transition: transform 0.15s ease;
+    border: 2px solid transparent;      /* reserva del espacio del borde siempre */
+}
+
+/* Estados hover (para cualquier elemento con clase .btn):
+    - En hover, “sube” 3px (efecto elevado)*/
+
+
+
+/* Hover: solo si el dispositivo realmente soporta hover */
+@media (hover: hover) and (pointer: fine) {
+    .btn:hover {
+        transform: translateY(-3px);
+    }
+}
+
+/*------------------------------------*\
+
+$PILL BUTTON
+
+\*------------------------------------*/
+
+/* Estilos de forma del botón píldora*/
+.pill-btn {
+    display: inline-flex;   
+    gap: var(--space-xxxxs);      
+    padding: 1rem 2rem;
+    font-size: var(--text-xs);
+    white-space: nowrap;
+}
+
+/* Variante: ajusta el ancho al contenido y centra el botón en su contenedor flex */
+.pill-btn.fit-btn {
+    width: fit-content;
+}
+
+/*------------------------------------*\
+
+$CIRCULAR BUTTON
+
+\*------------------------------------*/
+
+/* Forma circular:
+    - Contenedor flex en columna (útil para icono + texto)*/
+.circular-btn {
+    display: flex; 
+    flex-direction: column;
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: var(--text-xxxs);
+}
+
+/*------------------------------------*\
+
+$PRIMARY 
+
+\*------------------------------------*/
+
+.solid-white {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+.solid-black {
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+/*------------------------------------*\
+
+$SECONDARY 
+
+\*------------------------------------*/
+
+.ghost--accent-white {
+    background: transparent;
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
+}
+
+.ghost--accent-black {
+    background: transparent;
+    color: var(--color-black);
+    border: 2px solid var(--color-black);
+}

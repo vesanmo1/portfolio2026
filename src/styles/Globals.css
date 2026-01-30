@@ -1,0 +1,108 @@
+/*------------------------------------*\
+$FUENTES (Google Fonts)
+- Importa la tipografía base del proyecto (Plus Jakarta Sans).
+- Se usa después vía font-family en estilos globales y utilidades.
+\*------------------------------------*/
+
+/* Plus Jakarta Sans (texto base) */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+
+    /*------------------------------------*\
+    $CUSTOM PROPERTIES
+    - Variables globales: colores, espaciados, márgenes y tamaños de fuente.
+    - Se consumen en componentes para consistencia visual.
+    \*------------------------------------*/
+
+    /*============== COLORS ==============*/
+
+    /* BASE (valores reales) */  
+    --color-white:  rgba(230, 226, 219, 1);
+    --color-black:  rgba(24, 23, 22, 1);
+    --color-black-transparent:  rgba(24, 23, 22, 0.15);
+    --color-beige:  rgba(171, 162, 150, 1);
+    --color-brown:  rgba(80, 71, 63, 1);
+
+    /* Semánticos (intención / rol) */ 
+    --color-bg: var(--color-white);
+    --color-bg-secondary: var(--color-black);
+
+    --color-text: var(--color-black);
+    --color-text-secondary: var(--color-white);
+
+    --color-accent: var(--color-beige);
+    --color-accent-secondary: var(--color-brown);
+
+    /*
+    ============== SPACE NAVBAR ==============
+    - Altura del navbar y su wrapper
+    */
+    --nav-wrap-h: 6rem;
+    --nav-bar-h: 4rem;
+
+    /*
+    ============== DIMENSIONS ==============
+    - Escala de espaciados para paddings/margins/gaps.
+    */
+
+    --layout-gutter-xl:  140px;
+    --layout-gutter-l:   70px;
+    --layout-gutter-m:   40px;
+    --layout-gutter-s:   32px;
+    --layout-gutter-xs:  24px;
+
+    --w-100: 1920px;
+    --w-75:  1440px;
+    --w-50:  960px;
+    --w-33:  640px;  
+    --w-25:  480px;
+
+    --gap-xxl:   12rem;
+    --gap-xl:    6rem;
+    --gap-l:     4rem;
+    --gap-m:     3rem;
+    --gap-s:     2rem;
+    --gap-xs:    1rem;
+    --gap-xxs:   0.5rem;
+
+    --radius-m: 2rem;
+
+    /*
+    ============== FONT SIZES ==============
+    - Tipografías responsive con clamp(min, fluid, max).
+    */
+    --text-xxl:     clamp(3rem, 5.5vw, 5.5rem);
+    --text-xl:      clamp(2.5rem, 4.25vw, 4.25rem);
+    --text-l:       clamp(2rem, 3vw, 3rem);
+    --text-m:       clamp(1.375rem, 2.25vw, 2.25rem);
+    --text-s:       clamp(1rem, 1.75vw, 1.75rem);
+    --text-xs:      clamp(1rem, 1.25vw, 1.25rem);
+    --text-xxs:     0.875rem;
+    --text-xxxs:    0.75rem;
+
+}
+
+/*------------------------------------*\
+$DEFAULT STYLES
+- Normaliza base del documento y define tipografía/colores por defecto.
+\*------------------------------------*/
+
+/* html y body ocupan todo el alto para layouts basados en viewport */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Estilos base del body:
+    - tipografía principal (Plus Jakarta Sans)
+    - tamaño base y peso medio
+    - fondo vainilla y texto negro */
+body {
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+    font-weight: 500;
+    font-size: var(--text-xxs);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
