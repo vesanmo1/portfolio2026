@@ -1,0 +1,26 @@
+.projects {
+    padding-block: calc(var(--nav-wrap-h) + var(--gap-l));
+    padding-inline: var(--layout-gutter-xl);
+    max-width: var(--w-100);
+    width: 100%;
+}
+
+    .projects__wrapper {
+        padding-top: var(--gap-xl);
+    }
+
+/* ================================ max-width 1000px ================================ */
+
+@media screen and (max-width: 1000px) {
+    .projects {
+        padding-inline: var(--layout-gutter-l);
+    }
+}
+
+/* ================================ max-width 600px ================================ */
+
+@media screen and (max-width: 600px) {
+    .projects {
+        padding-inline: var(--layout-gutter-m);
+    }
+}

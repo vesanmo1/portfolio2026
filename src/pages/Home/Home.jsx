@@ -44,7 +44,7 @@ export default function Home() {
 
             <section className="skills">
                 <div className="skills__intro">
-                    <h2 className="skills__title">Qué aporto</h2>
+                    <h2 className="title__section">Qué aporto</h2>
                     <p className="skills__subtitle">Diseño y desarrollo en un mismo perfil</p>
                 </div>
                 <div className="skills__cards">
@@ -64,7 +64,7 @@ export default function Home() {
                         description="Desarrollo interfaces con una base clara, priorizando el orden y la mantenibilidad del código."
                     />
                     <SkillCard
-                        className="skill-card__wrapper--lastest"
+                        className="skill-card--lastest"
                         index="04"
                         title="Backend"
                         description="He trabajado con APIs simples, comprendiendo su estructura y la comunicación con la base de datos."
@@ -74,7 +74,7 @@ export default function Home() {
 
             <section className="cta-projects">
                 <div className="cta-projects__wrapper">
-                    <h2 className="cta-projects__text">Algunos ejemplos de cómo aplico estas habilidades a proyectos reales.</h2>
+                    <h4 className="cta-projects__text">Algunos ejemplos de cómo aplico estas habilidades a proyectos reales.</h4>
                     <Link
                         className="cta-projects__btn  pill-btn  fit-btn  solid-white"
                         to={"/projects"}

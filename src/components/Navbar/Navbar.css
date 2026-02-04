@@ -23,7 +23,7 @@
         width: 100%;
         height: var(--nav-bar-h);
 
-        border-radius: 999px;
+        border-radius: var(--radius-full);
         background-color: var(--color-bg);
         box-shadow: 4px 4px 12px var(--color-black-transparent);
 
@@ -76,10 +76,11 @@
     }
 
     .nav-menu__button {
-        background-color: var(--color-bg);
         width: var(--nav-bar-h);
         height: var(--nav-bar-h);
-        border-radius: 999px;
+        background-color: var(--color-bg);
+        box-shadow: 4px 4px 12px var(--color-black-transparent);
+        border-radius: var(--radius-full);
 
         display: flex;
         justify-content: center;
@@ -97,7 +98,7 @@
         right: var(--layout-gutter-m);
         flex-direction: column;
         gap: var(--gap-s);
-        font-size: var(--text-xxxs);
+        font-size: var(--span);
 
         opacity: 0;
         transform: translateX(16px); 
