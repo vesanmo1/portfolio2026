@@ -28,7 +28,7 @@ export default function Projects() {
                 <ProjectCard
                     index="02"
                     title="The Cookie Jar"
-                    description="Diseño de identidad visual y piezas gráficas para una clínica podológica."
+                    description="Definición de la identidad visual, diseño de interfaz en Figma y desarrollo de la web en React, con base de datos y API propia para la gestión de contenidos."
                     projectLink="/project2"
                     webpSrc={Project2Webp}        
                     fallbackSrc={Project2Jpg}     
