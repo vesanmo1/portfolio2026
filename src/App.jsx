@@ -12,8 +12,9 @@
 // Estilos globales de la aplicación.
 import "./styles/Globals.css"
 
-// BrowserRouter: permite navegar por diferentes rutas sin recargar la página.
-import { BrowserRouter } from "react-router-dom"
+// HashRouter: evita 404 al recargar rutas en GitHub Pages (hosting estático sin rewrites).
+// `basename` usa el `base` configurado en Vite (/, /<repo>/, etc.).
+import { HashRouter } from "react-router-dom"
 
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
@@ -24,15 +25,15 @@ import AppRoutes from "@/router/AppRoutes";
 // App
 //
 // Este componente es el "contenedor principal" de la web.
-// Aquí envolvemos la app con BrowserRouter para activar las rutas.
+// Aquí envolvemos la app con HashRouter para activar las rutas.
 // Dentro, AppRoutes decide qué página se muestra.
 // ============================================================
 export default function App() {
     return (
-        <BrowserRouter>
+        <HashRouter basename={import.meta.env.BASE_URL}>
             <Navbar />
                 <AppRoutes />
             <Footer />
-        </BrowserRouter>
+        </HashRouter>
     )
 }

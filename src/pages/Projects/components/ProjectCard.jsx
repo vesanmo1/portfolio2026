@@ -6,7 +6,7 @@ import Project1PNG from "@/assets/projects/project1.webp"
 
 export default function ProjectCard(props) {
 
-    const { index, title, description, className = "" } = props
+    const { index, title, description, projectLink, className = "" } = props
 
     return (
         <article className={`project-card  ${className}`}>
@@ -19,7 +19,7 @@ export default function ProjectCard(props) {
                     <h3 className="project-card__description">{description}</h3>
                     <Link
                         className="cta-projects__btn  pill-btn  fit-btn  solid-black"
-                        to={"/project1"}
+                        to={projectLink}
                     >
                         Ver proyecto
                     </Link>

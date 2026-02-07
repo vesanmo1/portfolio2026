@@ -13,17 +13,19 @@ export default function Projects() {
                     index="01"
                     title="Paula Perelló Podología"
                     description="Diseño de identidad visual y piezas gráficas para una clínica podológica."
+                    projectLink="/project1"
                 />
                 <ProjectCard
                     index="02"
                     title="The Cookie Jar"
                     description="Diseño de identidad visual y piezas gráficas para una clínica podológica."
+                    projectLink="/project2"
                 />
                 <ProjectCard
-                    className="project-card--lastest"
                     index="03"
                     title="Taurino Digital Agency"
                     description="Creación de identidad visual y diseño de interfaz en Figma para empresa de servicios digitales."
+                    projectLink="/project3"
                 />
             </div>
         </main>
