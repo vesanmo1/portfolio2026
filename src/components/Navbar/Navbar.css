@@ -98,7 +98,7 @@
         right: var(--layout-gutter-m);
         flex-direction: column;
         gap: var(--gap-s);
-        font-size: var(--span);
+        font-size: var(--text-s);
 
         opacity: 0;
         transform: translateX(16px); 

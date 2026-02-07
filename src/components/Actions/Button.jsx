@@ -15,7 +15,7 @@ import "./Actions.css"
 // Button
 // Props:
 // - className (string):
-//      clases extra para estilos/variantes (por ejemplo "btn--primary", "btn--outline-dark").
+//      clases extra para estilos/variantes (por ejemplo "btn--text-mrimary", "btn--outline-dark").
 //      por defecto "".
 // - children (ReactNode):
 //      contenido del botón (texto, iconos, etc.).

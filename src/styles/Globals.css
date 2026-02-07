@@ -75,12 +75,13 @@ $FUENTES (Google Fonts)
     */
     --h1:       clamp(2.25rem, 7vw, 10rem);
     --h2:       clamp(1.875rem, 5.5vw, 6.75rem);
-    --h3:       clamp(1.5rem, 3vw, 3.75rem);
-    --h4:       clamp(1.125rem, 1.75vw, 2.25rem);
-    --h5:       clamp(1rem, 1.25vw, 1.5rem);
-    --h6:       1rem;
-    --p:        0.875rem;
-    --span:     0.75rem;
+    --h3:       clamp(1.75rem, 4.5vw, 4.5rem);
+    --h4:       clamp(1.5rem, 3vw, 3.75rem);
+    --h5:       clamp(1.125rem, 1.75vw, 2.25rem);
+    --h6:       clamp(1rem, 1.25vw, 1.5rem);
+    --text-l:   1rem;
+    --text-m:   0.875rem;
+    --text-s:   0.75rem;
 
 }
 
@@ -103,7 +104,7 @@ body {
 body {
     font-family: "Plus Jakarta Sans", system-ui, sans-serif;
     font-weight: 500;
-    font-size: var(--p);
+    font-size: var(--text-m);
     background-color: var(--color-bg);
     color: var(--color-text);
 }

@@ -2,11 +2,20 @@ import "./ProjectCard.css"
 
 import Link from "@/components/Actions/Link"
 
-import Project1PNG from "@/assets/projects/project1.webp"
-
 export default function ProjectCard(props) {
 
-    const { index, title, description, projectLink, className = "" } = props
+    const { 
+        index,
+        title, 
+        description, 
+        projectLink, 
+        className = "",
+
+        // props de imagen
+        webpSrc,           // principal (webp)
+        fallbackSrc,       // reserva (jpg/png)
+        alt = "",
+    } = props
 
     return (
         <article className={`project-card  ${className}`}>
@@ -26,7 +35,10 @@ export default function ProjectCard(props) {
                 </div>
             </div>
             <div className="project-card__wrapper  project-card__wrapper--media">
-                <img className="project-card__image" src={Project1PNG} alt="" />
+                <picture className="project-card__image">
+                    {webpSrc && <source srcSet={webpSrc} type="image/webp" />}
+                    <img src={fallbackSrc || webpSrc} alt={alt} />
+                </picture>
             </div>
         </article>
     )

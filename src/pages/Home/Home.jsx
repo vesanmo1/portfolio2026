@@ -1,9 +1,9 @@
 import "./Home.css"
 
-import folderDesktopWEBP from "@/assets/home/folderDesktop.webp"
-import folderDesktopPNG from "@/assets/home/folderDesktop.png"
-import folderMobileWEBP from "@/assets/home/folderMobile.webp"
-import folderMobilePNG from "@/assets/home/folderMobile.png"
+import folderDesktopWebp from "@/assets/home/folderDesktop.Webp"
+import folderDesktopPng from "@/assets/home/folderDesktop.Png"
+import folderMobileWebp from "@/assets/home/folderMobile.Webp"
+import folderMobilePng from "@/assets/home/folderMobile.Png"
 
 import titleDesktop from "@/assets/home/title-desktop.svg"
 import titleMobile from "@/assets/home/title-mobile.svg"
@@ -23,10 +23,10 @@ export default function Home() {
                         mobileSrc={titleMobile}
                     />
                     <ResponsivePicture
-                        desktopWebp={folderDesktopWEBP}
-                        desktopPng={folderDesktopPNG}
-                        mobileWebp={folderMobileWEBP}
-                        mobilePng={folderMobilePNG}
+                        desktopWebp={folderDesktopWebp}
+                        desktopPng={folderDesktopPng}
+                        mobileWebp={folderMobileWebp}
+                        mobilePng={folderMobilePng}
                         alt="Imagen: carpeta con fotos de algunos de mis trabajos"
                     />             
                 </div>
@@ -93,11 +93,11 @@ function ResponsivePicture(props) {
 
     return (
         <picture className="cover__title-img">
-            <source type="image/webp" media="(min-width: 1000px)" srcSet={desktopWebp} />
-            <source type="image/png"  media="(min-width: 1000px)" srcSet={desktopPng} />
+            <source type="image/Webp" media="(min-width: 1000px)" srcSet={desktopWebp} />
+            <source type="image/Png"  media="(min-width: 1000px)" srcSet={desktopPng} />
 
-            <source type="image/webp" media="(max-width: 999px)" srcSet={mobileWebp} />
-            <source type="image/png"  media="(max-width: 999px)" srcSet={mobilePng} />
+            <source type="image/Webp" media="(max-width: 999px)" srcSet={mobileWebp} />
+            <source type="image/Png"  media="(max-width: 999px)" srcSet={mobilePng} />
 
             <img src={mobilePng} alt={alt} />
         </picture>
