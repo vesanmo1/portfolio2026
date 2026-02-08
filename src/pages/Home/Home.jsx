@@ -1,9 +1,9 @@
 import "./Home.css"
 
-import folderDesktopWebp from "@/assets/home/folderDesktop.Webp"
-import folderDesktopPng from "@/assets/home/folderDesktop.Png"
-import folderMobileWebp from "@/assets/home/folderMobile.Webp"
-import folderMobilePng from "@/assets/home/folderMobile.Png"
+import folderDesktopWebp from "@/assets/home/folderDesktop.webp"
+import folderDesktopPng from "@/assets/home/folderDesktop.png"
+import folderMobileWebp from "@/assets/home/folderMobile.webp"
+import folderMobilePng from "@/assets/home/folderMobile.png"
 
 import titleDesktop from "@/assets/home/title-desktop.svg"
 import titleMobile from "@/assets/home/title-mobile.svg"
