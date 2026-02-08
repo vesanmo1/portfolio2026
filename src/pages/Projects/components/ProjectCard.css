@@ -74,7 +74,7 @@
 @media screen and (max-width: 900px) {
 
 .project-card {
-    padding: var(--gap-m) 0;
+    padding: var(--gap-m) var(--gap-s);
     flex-direction: column-reverse;
 }
 

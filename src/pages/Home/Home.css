@@ -107,15 +107,30 @@
     }
 }
 
-/* ================================ max-width 600px ================================ */
+/* ================================ max-width 900px ================================ */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 
-    .cover__wrapper,
     .intro,
     .skills,
     .cta-projects {
         padding-inline: var(--layout-gutter-m);
+    }
+}
+
+
+/* ================================ max-width 600px ================================ */
+
+@media screen and (max-width: 600px) {
+
+    .cover__wrapper {
+        padding-inline: var(--layout-gutter-m);
+    }
+
+    .intro,
+    .skills,
+    .cta-projects {
+        padding-inline: var(--layout-gutter-xs);
     }
 
     .cta-projects__wrapper {

@@ -2,8 +2,8 @@
     width: 100%;
     height: 100vh;
     padding-top: calc(var(--nav-wrap-h) + var(--layout-gutter-m));
-    padding-bottom: var(--layout-gutter-m);
-    padding-inline: var(--layout-gutter-m);    
+    padding-bottom: var(--layout-gutter-l);
+    padding-inline: var(--layout-gutter-l);    
 }
 
 @supports (height: 100svh) {
@@ -30,11 +30,11 @@
     }
 
     .project-cover__wrapper--2 {
-        background-color: var(--brunswick-color-project1);
+        background-color: var(--amaranto-color-project2);
     }
 
     .project-cover__wrapper--3 {
-        background-color: var(--brunswick-color-project1);
+        background-color: var(--night-color-project3);
     }
 
         .project-cover__image {
@@ -45,11 +45,23 @@
             object-fit: contain;
         }
 
-/* ================================ max-width 800px ================================ */
+/* ================================ max-width 900px ================================ */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
     .project-cover {
+        padding-bottom: var(--layout-gutter-m);
+        padding-inline: var(--layout-gutter-m); 
         height: 50vh;
+    }
+}
+
+/* ================================ max-width 600px ================================ */
+
+@media screen and (max-width: 600px) {
+
+    .project-cover {
+        padding-bottom: var(--layout-gutter-xs);
+        padding-inline: var(--layout-gutter-xs); 
     }
 }

@@ -1,5 +1,5 @@
 .nav-menu {
-    padding: 0 var(--layout-gutter-l);
+    padding: 0 var(--layout-gutter-m);
     width: 100%;
     height: var(--nav-wrap-h);
     background-color: transparent;
@@ -51,9 +51,9 @@
                 }
             }
 
-/* ================================ max-width 1000px ================================ */
+/* ================================ max-width 900px ================================ */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
     .nav-menu__list{
         max-width: 100%;
     }
@@ -63,7 +63,7 @@
 
 @media screen and (max-width: 600px) {
     .nav-menu {
-        padding: 0 var(--layout-gutter-m);
+        padding: 0 var(--layout-gutter-xs);
     }
 }
 

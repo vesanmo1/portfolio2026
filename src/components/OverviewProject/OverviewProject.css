@@ -12,7 +12,7 @@ $OVERVIEW
         .overview__logo{
             position: relative;
             top: var(--gap-xs);
-            left: var(--gap-xxl);
+            left: calc(var(--layout-gutter-xl) + 4%);
             max-width: 150px;
             aspect-ratio: 1;
         }
@@ -23,6 +23,8 @@ $OVERVIEW
 
             .overview__list {
                 border: 2px solid var(--color-accent);
+                border-radius: var(--radius-m);
+                overflow: hidden;
                 display: grid;
                 grid-template-areas: 
                     "name       name"
@@ -31,14 +33,24 @@ $OVERVIEW
                     "tools      tools";                            
             }
 
-                .overview__item--name{grid-area: name;}
-                .overview__item--type{grid-area: type;}
-                .overview__item--duration{grid-area: duration;}
-                .overview__item--role{grid-area: role;}
-                .overview__item--tools{grid-area: tools;}
+                .overview__item--name {grid-area: name;}
+                .overview__item--type {grid-area: type;}
+                .overview__item--time {grid-area: duration;}
+                .overview__item--role {grid-area: role;}
+                .overview__item--tools {grid-area: tools;}
+
+                .overview__item--name,
+                .overview__item--type,
+                .overview__item--time,
+                .overview__item--role {
+                    border-bottom: 2px solid var(--color-accent);
+                }
+
+                .overview__item--time {
+                    border-right: 2px solid var(--color-accent);
+                }
 
                 .overview__item {
-                    border: 2px solid var(--color-accent);
                     padding: var(--gap-xs);
 
                     display: flex;
@@ -53,4 +65,30 @@ $OVERVIEW
 
                     .overview__value {
                         font-size: var(--h6);
+                        font-weight: 700;
                     }
+
+/* ================================ max-width 1200px ================================ */
+
+@media screen and (max-width: 1200px) {
+    .overview__details {
+        padding-inline: var(--layout-gutter-l);
+    }
+}
+
+/* ================================ max-width 900px ================================ */
+
+@media screen and (max-width: 900px) {
+    .overview__details {
+        padding-inline: var(--layout-gutter-m);
+    }
+}
+
+
+/* ================================ max-width 600px ================================ */
+
+@media screen and (max-width: 600px) {
+    .overview__details {
+        padding-inline: var(--layout-gutter-xs);
+    }
+}

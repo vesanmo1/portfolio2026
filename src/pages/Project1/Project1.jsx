@@ -18,6 +18,11 @@ export default function Project1 () {
             <OverviewProject
                 src={Sticker1}
                 alt="Círuclo con el logo de Paula Perelló Podología"
+                nameValue="Paula Perelló Podología"
+                typeValue="Branding, diseño gráfico."
+                timeValue="8 semanas"
+                roleValue="Diseñadora"
+                toolsValue="Illustrator, Photoshop"
             />
         </main>
     )

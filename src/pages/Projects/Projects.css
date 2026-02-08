@@ -26,11 +26,19 @@
     }
 }
 
+/* ================================ max-width 900px ================================ */
+
+@media screen and (max-width: 900px) {
+
+    .projects {
+        padding-inline: var(--layout-gutter-m);
+    }
+}
 
 /* ================================ max-width 600px ================================ */
 
 @media screen and (max-width: 600px) {
     .projects {
-        padding-inline: var(--layout-gutter-m);
+        padding-inline: var(--layout-gutter-xs);
     }
 }
