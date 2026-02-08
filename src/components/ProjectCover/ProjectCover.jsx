@@ -1,14 +1,13 @@
 import "./ProjectCover.css"
 
-export default function ProjectCover () {
+export default function ProjectCover (props) {
+
+    const { number, src, alt } = props
 
     return (
-        <div className="logo__wrapper">
-            <div className="logo__container">
-                <picture>
-                    <source srcSet="" />
-                    <img src="" alt="" />
-                </picture>
+        <div className="project-cover">
+            <div className={`project-cover__wrapper project-cover__wrapper--${number}`}>
+                <img className="project-cover__image" src={src} alt={alt} />
             </div>
         </div>
     )

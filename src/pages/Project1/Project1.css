@@ -6,19 +6,3 @@
     --mindaro--color-project1:      rgba(194, 225, 137, 1);
     --glicina-color-project1:       rgba(193, 167, 226, 1);
 }
-
-.logo__wrapper {
-    width: 100%;
-    height: 100vh;
-    padding-top: calc(var(--nav-wrap-h) + var(--layout-gutter-m));
-    padding-bottom: var(--layout-gutter-m);
-    padding-inline: var(--layout-gutter-m);    
-}
-
-.logo__container {
-    width: 100%;
-    height: 100%;
-
-    background-color: var(--brunswick-color-project1);
-    border-radius: var(--radius-m);
-}

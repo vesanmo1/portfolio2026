@@ -4,28 +4,24 @@ $OVERVIEW
 
 \*------------------------------------*/
 
-.overview__section {
-    padding-top: var(--gap-m);
-}
-
     .overview__container {
         width: 100%;
         height: 100%;
     }
 
-        .content__section--sticker{
+        .overview__logo{
             position: relative;
-            top: 7px;
-            margin-left: calc(var(--gap-xxl) + 5%);
+            top: var(--gap-xs);
+            left: var(--gap-xxl);
             max-width: 150px;
             aspect-ratio: 1;
         }
 
-        .content__section--summary {
-            padding: 0 var(--gap-xxl);            
+        .overview__details {
+            padding-inline: var(--layout-gutter-xl);          
         }
 
-            .summary__container {
+            .overview__list {
                 border: 2px solid var(--color-accent);
                 display: grid;
                 grid-template-areas: 
@@ -35,17 +31,26 @@ $OVERVIEW
                     "tools      tools";                            
             }
 
-                .summary__content--name{grid-area: name;}
-                .summary__content--type{grid-area: type;}
-                .summary__content--duration{grid-area: duration;}
-                .summary__content--role{grid-area: role;}
-                .summary__content--tools{grid-area: tools;}
+                .overview__item--name{grid-area: name;}
+                .overview__item--type{grid-area: type;}
+                .overview__item--duration{grid-area: duration;}
+                .overview__item--role{grid-area: role;}
+                .overview__item--tools{grid-area: tools;}
 
-                .summary__content {
+                .overview__item {
                     border: 2px solid var(--color-accent);
-                    padding: var(--gap-l);
+                    padding: var(--gap-xs);
 
                     display: flex;
                     flex-direction: column;
-                    gap: var(--gap-l);
+                    gap: var(--gap-xs);
                 }
+
+                    .overview__label {
+                        font-size: var(--text-m);
+                        text-transform: uppercase;
+                    }
+
+                    .overview__value {
+                        font-size: var(--h6);
+                    }

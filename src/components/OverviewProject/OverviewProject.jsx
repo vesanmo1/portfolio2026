@@ -1,42 +1,45 @@
 import "./OverviewProject.css";
 
-export default function OverviewProject() {
+export default function OverviewProject (props) {
+
+    const { src, alt } = props
+
     return (
-        <section className="overview__section">
+        <section className="overview">
             <div className="overview__container">
-                <div className="content__section content__section--sticker auto-rotate">
+                <div className="overview__logo  auto-rotate">
                     <img
-                        className="contain__img"
-                        src=""
-                        alt="Círculo con el logo de Paula Perelló Podología"
+                    className="overview__logo-image"
+                    src={src}
+                    alt={alt}
                     />
                 </div>
 
-                <div className="content__section content__section--summary">
-                    <div className="summary__container">
-                        <div className="summary__content summary__content--name">
-                            <p className="h5 uppercase summary__title">Nombre:</p>
-                            <p className="h6 summary__text">Paula Perelló Podología</p>
+                <div className="overview__details">
+                    <div className="overview__list">
+                        <div className="overview__item  overview__item--name">
+                            <p className="overview__label">Nombre:</p>
+                            <p className="overview__value">Paula Perelló Podología</p>
                         </div>
 
-                        <div className="summary__content summary__content--type">
-                            <p className="h5 uppercase summary__title">Tipo de proyecto:</p>
-                            <p className="h6 summary__text">Branding, diseño gráfico.</p>
+                        <div className="overview__item  overview__item--type">
+                            <p className="overview__label">Tipo de proyecto:</p>
+                            <p className="overview__value">Branding, diseño gráfico.</p>
                         </div>
 
-                        <div className="summary__content summary__content--duration">
-                            <p className="h5 uppercase summary__title">Duración del proyecto:</p>
-                            <p className="h6 summary__text">8 semanas</p>
+                        <div className="overview__item  overview__item--duration">
+                            <p className="overview__label">Duración del proyecto:</p>
+                            <p className="overview__value">8 semanas</p>
                         </div>
 
-                        <div className="summary__content summary__content--role">
-                            <p className="h5 uppercase summary__title">Rol:</p>
-                            <p className="h6 summary__text">Diseñadora</p>
+                        <div className="overview__item  overview__item--role">
+                            <p className="overview__label">Rol:</p>
+                            <p className="overview__value">Diseñadora</p>
                         </div>
 
-                        <div className="summary__content summary__content--tools">
-                            <p className="h5 uppercase summary__title">Herramientas:</p>
-                            <p className="h6 summary__text">Illustrator, Photoshop</p>
+                        <div className="overview__item  overview__item--tools">
+                            <p className="overview__label">Herramientas:</p>
+                            <p className="overview__value">Illustrator, Photoshop</p>
                         </div>
                     </div>
                 </div>

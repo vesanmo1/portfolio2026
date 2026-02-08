@@ -101,7 +101,7 @@ function ResponsivePicture(props) {
 
             <img src={mobilePng} alt={alt} />
         </picture>
-    );
+    )
 }
 
 function ResponsiveSvg(props) {
@@ -113,5 +113,5 @@ function ResponsiveSvg(props) {
             <source media="(min-width: 1000px)" srcSet={desktopSrc} />
             <img src={mobileSrc} alt={alt} />
         </picture>
-    );
+    )
 }
