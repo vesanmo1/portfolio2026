@@ -1,12 +1,3 @@
-:root {
-
-    /*Project 1 color palette (Paula Perelló Podología)*/
-    --brunswick-color-project1:     rgba(23, 63, 53, 1);
-    --cambridge-color-project1:     rgba(120, 159, 144, 1);
-    --mindaro--color-project1:      rgba(194, 225, 137, 1);
-    --glicina-color-project1:       rgba(193, 167, 226, 1);
-}
-
 .logo__wrapper {
     width: 100%;
     height: 100vh;

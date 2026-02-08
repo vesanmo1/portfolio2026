@@ -4,17 +4,6 @@ export default function OverviewProject() {
     return (
         <section className="overview__section">
             <div className="overview__container">
-                <picture className="contain__picture">
-                    <source srcSet="" type="image/png" />
-                    <img
-                        className="contain__img"
-                        src=""
-                        alt="Foto polaroid con la fachada de la clínica de podología"
-                    />
-                </picture>
-            </div>
-
-            <div className="overview__container">
                 <div className="content__section content__section--sticker auto-rotate">
                     <img
                         className="contain__img"

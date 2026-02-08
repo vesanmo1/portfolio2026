@@ -16,18 +16,16 @@
 
     .projects__wrapper {
         padding-top: var(--gap-l);
-        display: flex;
-        flex-direction: column;
-        gap: var(--gap-l);
     }
 
-/* ================================ max-width 1000px ================================ */
+/* ================================ max-width 1200px ================================ */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .projects {
         padding-inline: var(--layout-gutter-l);
     }
 }
+
 
 /* ================================ max-width 600px ================================ */
 

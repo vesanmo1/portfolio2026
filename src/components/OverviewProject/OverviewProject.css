@@ -1,0 +1,51 @@
+/*------------------------------------*\
+
+$OVERVIEW
+
+\*------------------------------------*/
+
+.overview__section {
+    padding-top: var(--gap-m);
+}
+
+    .overview__container {
+        width: 100%;
+        height: 100%;
+    }
+
+        .content__section--sticker{
+            position: relative;
+            top: 7px;
+            margin-left: calc(var(--gap-xxl) + 5%);
+            max-width: 150px;
+            aspect-ratio: 1;
+        }
+
+        .content__section--summary {
+            padding: 0 var(--gap-xxl);            
+        }
+
+            .summary__container {
+                border: 2px solid var(--color-accent);
+                display: grid;
+                grid-template-areas: 
+                    "name       name"
+                    "type       type"
+                    "duration   role"
+                    "tools      tools";                            
+            }
+
+                .summary__content--name{grid-area: name;}
+                .summary__content--type{grid-area: type;}
+                .summary__content--duration{grid-area: duration;}
+                .summary__content--role{grid-area: role;}
+                .summary__content--tools{grid-area: tools;}
+
+                .summary__content {
+                    border: 2px solid var(--color-accent);
+                    padding: var(--gap-l);
+
+                    display: flex;
+                    flex-direction: column;
+                    gap: var(--gap-l);
+                }
