@@ -1,15 +1,10 @@
 .project-card {
     width: 100%;
     padding: var(--gap-m);
-    border-top: 1px solid var(--color-accent);
     
     display: flex;
     flex-direction: row;
     gap: var(--gap-xl);
-}
-
-.project-card--lastest {
-    border-bottom: 1px solid var(--color-accent);
 }
 
     .project-card__wrapper {

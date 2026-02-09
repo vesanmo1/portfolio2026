@@ -3,6 +3,8 @@ import "./Project1.css"
 import OverviewProject from "@/components/OverviewProject/OverviewProject"
 import ProjectCover from "@/components/ProjectCover/ProjectCover"
 
+import ProjectsNavigation from "@/components/ProjectsNavigation/ProjectsNavigation"
+
 import LogoCover1 from "@/assets/project1/logos/logo-dark-background-podiatry.svg"
 import Sticker1 from "@/assets/project1/sticker-podiatry.svg"
 
@@ -24,6 +26,7 @@ export default function Project1 () {
                 roleValue="Diseñadora gráfica (branding)"
                 toolsValue="Illustrator, Photoshop"
             />
+            <ProjectsNavigation/>
         </main>
     )
 }

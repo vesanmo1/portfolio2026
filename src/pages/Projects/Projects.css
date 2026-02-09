@@ -18,6 +18,14 @@
         padding-top: var(--gap-l);
     }
 
+        .project__wrapper {
+            border-top: 1px solid var(--color-accent);
+        }
+
+        .project__wrapper--lastest {
+            border-bottom: 1px solid var(--color-accent);
+        }
+
 /* ================================ max-width 1200px ================================ */
 
 @media screen and (max-width: 1200px) {

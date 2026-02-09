@@ -9,6 +9,7 @@ export default function ProjectCard(props) {
         title, 
         description, 
         projectLink, 
+        children,
         className = "",
 
         // props de imagen
@@ -30,7 +31,7 @@ export default function ProjectCard(props) {
                         className="cta-projects__btn  pill-btn  fit-btn  solid-black"
                         to={projectLink}
                     >
-                        Ver proyecto
+                        {children}
                     </Link>
                 </div>
             </div>
