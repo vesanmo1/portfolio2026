@@ -3,8 +3,8 @@ import "./Project2.css"
 import OverviewProject from "@/components/OverviewProject/OverviewProject"
 import ProjectCover from "@/components/ProjectCover/ProjectCover"
 
-import LogoCover1 from "@/assets/project1/logos/logo-dark-background-podiatry.svg"
-import Sticker1 from "@/assets/project1/sticker-podiatry.svg"
+import LogoCover2 from "@/assets/project2/logos/full-logo-yellow.svg"
+import Sticker2 from "@/assets/project2/sticker-cookies.svg"
 
 export default function Project2 () {
 
@@ -12,17 +12,17 @@ export default function Project2 () {
         <main className="project2">
             <ProjectCover
                 number="2"
-                src={LogoCover1}
+                src={LogoCover2}
                 alt="Logo de The Cookie Jar"
             />
             <OverviewProject
-                src={Sticker1}
-                alt="Círuclo con el logo de Paula Perelló Podología"
-                nameValue="Paula Perelló Podología"
-                typeValue="Branding, diseño gráfico."
-                timeValue="8 semanas"
-                roleValue="Diseñadora"
-                toolsValue="Illustrator, Photoshop"
+                src={Sticker2}
+                alt="Círuclo con el logo de The Cookie Jar"
+                nameValue="The Cookie Jar"
+                typeValue="Producto digital, Full-stack, Branding."
+                timeValue="11 semanas"
+                roleValue="Desarrolladora full-stack y diseñadora de producto"
+                toolsValue="React, Node.js, Express.js, MongoDB, Vercel, Figma, Illustrator"
             />
         </main>
     )

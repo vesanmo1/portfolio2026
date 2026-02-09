@@ -19,9 +19,9 @@ export default function Project1 () {
                 src={Sticker1}
                 alt="Círuclo con el logo de Paula Perelló Podología"
                 nameValue="Paula Perelló Podología"
-                typeValue="Branding, diseño gráfico."
+                typeValue="Identidad visual y diseño gráfico"
                 timeValue="8 semanas"
-                roleValue="Diseñadora"
+                roleValue="Diseñadora gráfica (branding)"
                 toolsValue="Illustrator, Photoshop"
             />
         </main>

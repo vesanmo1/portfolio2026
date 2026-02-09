@@ -3,8 +3,8 @@ import "./Project3.css"
 import OverviewProject from "@/components/OverviewProject/OverviewProject"
 import ProjectCover from "@/components/ProjectCover/ProjectCover"
 
-import LogoCover1 from "@/assets/project1/logos/logo-dark-background-podiatry.svg"
-import Sticker1 from "@/assets/project1/sticker-podiatry.svg"
+import LogoCover3 from "@/assets/project3/logos/logo-m-black-background.svg"
+import Sticker3 from "@/assets/project3/sticker-taurino.svg"
 
 export default function Project3 () {
 
@@ -12,17 +12,17 @@ export default function Project3 () {
         <main className="project3">
             <ProjectCover
                 number="3"
-                src={LogoCover1}
-                alt="Logo de The Cookie Jar"
+                src={LogoCover3}
+                alt="Logo de Taurino Digital Agency"
             />
             <OverviewProject
-                src={Sticker1}
-                alt="Círuclo con el logo de Paula Perelló Podología"
-                nameValue="Paula Perelló Podología"
-                typeValue="Branding, diseño gráfico."
+                src={Sticker3}
+                alt="Círuclo con el logo de Taurino Digital Agency"
+                nameValue="Taurino Digital Agency"
+                typeValue="Branding y diseño de producto digital"
                 timeValue="8 semanas"
-                roleValue="Diseñadora"
-                toolsValue="Illustrator, Photoshop"
+                roleValue="Product designer (branding & UX/UI)"
+                toolsValue="Figma, Illustrator, Photoshop"
             />
         </main>
     )

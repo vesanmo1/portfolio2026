@@ -12,7 +12,7 @@ $OVERVIEW
         .overview__logo{
             position: relative;
             top: var(--gap-xs);
-            left: calc(var(--layout-gutter-xl) + 4%);
+            left: calc(var(--layout-gutter-xl) + 5%);
             max-width: 150px;
             aspect-ratio: 1;
         }
@@ -74,6 +74,10 @@ $OVERVIEW
     .overview__details {
         padding-inline: var(--layout-gutter-l);
     }
+
+    .overview__logo{
+        left: calc(var(--layout-gutter-l) + 5%);
+    }
 }
 
 /* ================================ max-width 900px ================================ */
@@ -81,6 +85,10 @@ $OVERVIEW
 @media screen and (max-width: 900px) {
     .overview__details {
         padding-inline: var(--layout-gutter-m);
+    }
+
+    .overview__logo{
+        left: calc(var(--layout-gutter-m) + 5%);
     }
 }
 
@@ -90,5 +98,9 @@ $OVERVIEW
 @media screen and (max-width: 600px) {
     .overview__details {
         padding-inline: var(--layout-gutter-xs);
+    }
+
+    .overview__logo{
+        left: calc(var(--layout-gutter-xs) + 5%);
     }
 }

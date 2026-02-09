@@ -95,7 +95,7 @@
         height: auto;
         position: absolute;
         top: var(--nav-wrap-h);
-        right: var(--layout-gutter-m);
+        right: var(--layout-gutter-xs);
         flex-direction: column;
         gap: var(--gap-s);
         font-size: var(--text-s);
